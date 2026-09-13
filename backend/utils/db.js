@@ -1,8 +1,9 @@
 const fs = require('fs');
 const path = require('path');
-
-const DB_PATH = path.join(__dirname, '..', 'data', 'db.json');
-
+const os = require('os');
+const DB_PATH = process.env.VERCEL
+  ? path.join(os.tmpdir(), 'db.json')
+  : path.join(__dirname, '..', 'data', 'db.json');
 // Ensure the data file exists with a valid initial shape.
 function ensureDb() {
   if (!fs.existsSync(DB_PATH)) {
