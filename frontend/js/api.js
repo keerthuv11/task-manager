@@ -1,5 +1,5 @@
 // Base URL of the backend API. Change this if you deploy the backend elsewhere.
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://task-manager-backend-ashy.vercel.app/api';
 
 const Storage = {
   getToken: () => localStorage.getItem('tf_token'),

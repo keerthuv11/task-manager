@@ -1,4 +1,4 @@
-const SOCKET_URL = 'http://localhost:5000';
+const SOCKET_URL = 'https://task-manager-backend-ashy.vercel.app';
 
 // ----- State -----
 let tasks = [];
